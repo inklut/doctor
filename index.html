@@ -37,10 +37,12 @@
     <!-- vendor css -->
     <link href="./lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="./lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="./lib/fullcalendar/fullcalendar.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="./assets/css/dashforge.css">
     <link rel="stylesheet" href="./assets/css/dashforge.dashboard.css">
+    <link rel="stylesheet" href="./assets/css/dashforge.calendar.css">
   </head>
   <body>
 
@@ -613,13 +615,49 @@
     <script src="./lib/jquery.flot/jquery.flot.resize.js"></script>
     <script src="./lib/chart.js/Chart.bundle.min.js"></script>
 
+    <script src="./lib/moment/min/moment.min.js"></script>
+    <script src="./lib/fullcalendar/fullcalendar.min.js"></script>
+    <script src="./lib/select2/js/select2.full.min.js"></script>
+
     <script src="./assets/js/dashforge.js"></script>
     <script src="./assets/js/dashforge.aside.js"></script>
     <script src="./assets/js/dashforge.sampledata.js"></script>
+    <script src="./assets/js/calendar-events.js"></script>
+    <script src="./assets/js/dashforge.calendar.js"></script>
 
     <!-- append theme customizer -->
     <script src="./lib/js-cookie/js.cookie.js"></script>
     <script src="./assets/js/dashforge.settings.js"></script>
+
+    <script>
+      $(function(){
+        'use strict'
+
+        $('#calendarSidebarShow').on('click', function(e){
+          e.preventDefault()
+          $('body').toggleClass('calendar-sidebar-show');
+
+          $(this).addClass('d-none');
+          $('#mainMenuOpen').removeClass('d-none');
+        })
+
+        $(document).on('click touchstart', function(e){
+          e.stopPropagation();
+
+          // closing of sidebar menu when clicking outside of it
+          if(!$(e.target).closest('.burger-menu').length) {
+            var sb = $(e.target).closest('.calendar-sidebar').length;
+            if(!sb) {
+              $('body').removeClass('calendar-sidebar-show');
+
+              $('#mainMenuOpen').addClass('d-none');
+              $('#calendarSidebarShow').removeClass('d-none');
+            }
+          }
+        });
+
+      })
+    </script>
 
     <script>
       $(function(){
