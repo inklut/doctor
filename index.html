@@ -37,7 +37,6 @@
     <!-- vendor css -->
     <link href="./lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="./lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="./lib/jqvmap/jqvmap.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="./assets/css/dashforge.css">
@@ -318,7 +317,7 @@
             </div><!-- col -->
             <div class="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
               <div class="card card-body">
-                <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Casos Añadidos</h6>
+                <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Casos de Pacientes</h6>
                 <div class="d-flex d-lg-block d-xl-flex align-items-end">
                   <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">0</h3>
                 </div>
@@ -340,7 +339,7 @@
             </div><!-- col -->
             <div class="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
               <div class="card card-body">
-                <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Documentos</h6>
+                <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Documentos de Pacientes</h6>
                 <div class="d-flex d-lg-block d-xl-flex align-items-end">
                   <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">0</h3>
                 </div>
@@ -363,19 +362,15 @@
             <div class="col-lg-8 col-xl-7 mg-t-10">
               <div class="card">
                 <div class="card-header pd-y-20 d-md-flex align-items-center justify-content-between">
-                  <h6 class="mg-b-0">Recurring Revenue Growth</h6>
+                  <h6 class="mg-b-0">Ingresos y Gastos Mensuales 2021</h6>
                   <ul class="list-inline d-flex mg-t-20 mg-sm-t-10 mg-md-t-0 mg-b-0">
                     <li class="list-inline-item d-flex align-items-center">
                       <span class="d-block wd-10 ht-10 bg-df-1 rounded mg-r-5"></span>
-                      <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Growth Actual</span>
+                      <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Ingresos</span>
                     </li>
                     <li class="list-inline-item d-flex align-items-center mg-l-5">
                       <span class="d-block wd-10 ht-10 bg-df-2 rounded mg-r-5"></span>
-                      <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Actual</span>
-                    </li>
-                    <li class="list-inline-item d-flex align-items-center mg-l-5">
-                      <span class="d-block wd-10 ht-10 bg-df-3 rounded mg-r-5"></span>
-                      <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Plan</span>
+                      <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Gastos</span>
                     </li>
                   </ul>
                 </div><!-- card-header -->
@@ -384,13 +379,13 @@
                     <div class="row">
                       <div class="col-sm-5">
                         <h3 class="tx-normal tx-rubik tx-spacing--2 mg-b-5">$620,076</h3>
-                        <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-10">MRR Growth</h6>
-                        <p class="mg-b-0 tx-12 tx-color-03">Measure How Fast You’re Growing Monthly Recurring Revenue. <a href="">Learn More</a></p>
+                        <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-10">Ingresos</h6>
+                        <p class="mg-b-0 tx-12 tx-color-03">Measure How Fast You’re Growing Monthly Recurring Revenue. <a href="">Añadir pago</a></p>
                       </div><!-- col -->
                       <div class="col-sm-5 mg-t-20 mg-sm-t-0">
                         <h3 class="tx-normal tx-rubik tx-spacing--2 mg-b-5">$1,200</h3>
-                        <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-10">Avg. MRR/Customer</h6>
-                        <p class="mg-b-0 tx-12 tx-color-03">The revenue generated per account on a monthly or yearly basis. <a href="">Learn More</a></p>
+                        <h6 class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-10">Gastos</h6>
+                        <p class="mg-b-0 tx-12 tx-color-03">The revenue generated per account on a monthly or yearly basis. <a href="">Añadir gastos</a></p>
                       </div><!-- col -->
                     </div><!-- row -->
                   </div>
@@ -426,64 +421,11 @@
                 </div><!-- card-body -->
               </div><!-- card -->
             </div>
-            <div class="col-md-6 col-xl-4 mg-t-10 order-md-1 order-xl-0">
-              <div class="card ht-lg-100p">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                  <h6 class="mg-b-0">Sales Revenue</h6>
-                  <div class="tx-13 d-flex align-items-center">
-                    <span class="mg-r-5">Country:</span> <a href="" class="d-flex align-items-center link-03 lh-0">USA <i class="icon ion-ios-arrow-down mg-l-5"></i></a>
-                  </div>
-                </div><!-- card-header -->
-                <div class="card-body pd-0">
-                  <div class="pd-y-25 pd-x-20">
-                    <div id="vmap" class="ht-200"></div>
-                  </div>
-                  <div class="table-responsive">
-                    <table class="table table-borderless table-dashboard table-dashboard-one">
-                      <thead>
-                        <tr>
-                          <th class="wd-40">States</th>
-                          <th class="wd-25 text-right">Orders</th>
-                          <th class="wd-35 text-right">Earnings</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="tx-medium">California</td>
-                          <td class="text-right">12,201</td>
-                          <td class="text-right">$150,200.80</td>
-                        </tr>
-                        <tr>
-                          <td class="tx-medium">Texas</td>
-                          <td class="text-right">11,950</td>
-                          <td class="text-right">$138,910.20</td>
-                        </tr>
-                        <tr>
-                          <td class="tx-medium">Wyoming</td>
-                          <td class="text-right">11,198</td>
-                          <td class="text-right">$132,050.00</td>
-                        </tr>
-                        <tr>
-                          <td class="tx-medium">Florida</td>
-                          <td class="text-right">9,885</td>
-                          <td class="text-right">$127,762.10</td>
-                        </tr>
-                        <tr>
-                          <td class="tx-medium">New York</td>
-                          <td class="text-right">8,560</td>
-                          <td class="text-right">$117,087.50</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div><!-- table-responsive -->
-                </div><!-- card-body -->
-              </div><!-- card -->
-            </div><!-- col -->
             <div class="col-lg-12 col-xl-8 mg-t-10">
               <div class="card mg-b-10">
                 <div class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 pd-b-0">
                   <div>
-                    <h6 class="mg-b-5">Your Most Recent Earnings</h6>
+                    <h6 class="mg-b-5">Balance del Mes</h6>
                     <p class="tx-13 tx-color-03 mg-b-0">Your sales and referral earnings over the last 30 days</p>
                   </div>
                   <div class="d-flex mg-t-20 mg-sm-t-0">
@@ -500,7 +442,7 @@
                         <i data-feather="bar-chart-2"></i>
                       </div>
                       <div class="media-body">
-                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold tx-nowrap mg-b-5 mg-md-b-8">Gross Earnings</h6>
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold tx-nowrap mg-b-5 mg-md-b-8">Ingresos</h6>
                         <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">$1,958,104</h4>
                       </div>
                     </div>
@@ -509,7 +451,7 @@
                         <i data-feather="bar-chart-2"></i>
                       </div>
                       <div class="media-body">
-                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Tax Withheld</h6>
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Gastos</h6>
                         <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">$234,769<small>.50</small></h4>
                       </div>
                     </div>
@@ -518,7 +460,7 @@
                         <i data-feather="bar-chart-2"></i>
                       </div>
                       <div class="media-body">
-                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Net Earnings</h6>
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Todas las Citas</h6>
                         <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">$1,608,469<small>.50</small></h4>
                       </div>
                     </div>
@@ -589,7 +531,7 @@
             <div class="col-md-6 col-xl-4 mg-t-10">
               <div class="card ht-100p">
                 <div class="card-header d-flex align-items-center justify-content-between">
-                  <h6 class="mg-b-0">Transaction History</h6>
+                  <h6 class="mg-b-0">Balance de Hoy</h6>
                   <div class="d-flex tx-18">
                     <a href="" class="link-03 lh-0"><i class="icon ion-md-refresh"></i></a>
                     <a href="" class="link-03 lh-0 mg-l-10"><i class="icon ion-md-more"></i></a>
@@ -657,129 +599,6 @@
                 </div><!-- card-footer -->
               </div><!-- card -->
             </div>
-            <div class="col-md-6 col-xl-4 mg-t-10">
-              <div class="card ht-100p">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                  <h6 class="mg-b-0">New Customers</h6>
-                  <div class="d-flex align-items-center tx-18">
-                    <a href="" class="link-03 lh-0"><i class="icon ion-md-refresh"></i></a>
-                    <a href="" class="link-03 lh-0 mg-l-10"><i class="icon ion-md-more"></i></a>
-                  </div>
-                </div>
-                <ul class="list-group list-group-flush tx-13">
-                  <li class="list-group-item d-flex pd-sm-x-20">
-                    <div class="avatar"><span class="avatar-initial rounded-circle bg-gray-600">s</span></div>
-                    <div class="pd-l-10">
-                      <p class="tx-medium mg-b-0">Socrates Itumay</p>
-                      <small class="tx-12 tx-color-03 mg-b-0">Customer ID#00222</small>
-                    </div>
-                    <div class="mg-l-auto d-flex align-self-center">
-                      <nav class="nav nav-icon-only">
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="mail"></i></a>
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="slash"></i></a>
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="user"></i></a>
-                        <a href="" class="nav-link d-sm-none"><i data-feather="more-vertical"></i></a>
-                      </nav>
-                    </div>
-                  </li>
-                  <li class="list-group-item d-flex pd-x-20">
-                    <div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
-                    <div class="pd-l-10">
-                      <p class="tx-medium mg-b-0">Reynante Labares</p>
-                      <small class="tx-12 tx-color-03 mg-b-0">Customer ID#00221</small>
-                    </div>
-                    <div class="mg-l-auto d-flex align-self-center">
-                      <nav class="nav nav-icon-only">
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="mail"></i></a>
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="slash"></i></a>
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="user"></i></a>
-                        <a href="" class="nav-link d-sm-none"><i data-feather="more-vertical"></i></a>
-                      </nav>
-                    </div>
-                  </li>
-                  <li class="list-group-item d-flex pd-x-20">
-                    <div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
-                    <div class="pd-l-10">
-                      <p class="tx-medium mg-b-0">Marianne Audrey</p>
-                      <small class="tx-12 tx-color-03 mg-b-0">Customer ID#00220</small>
-                    </div>
-                    <div class="mg-l-auto d-flex align-self-center">
-                      <nav class="nav nav-icon-only">
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="mail"></i></a>
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="slash"></i></a>
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="user"></i></a>
-                        <a href="" class="nav-link d-sm-none"><i data-feather="more-vertical"></i></a>
-                      </nav>
-                    </div>
-                  </li>
-                  <li class="list-group-item d-flex pd-x-20">
-                    <div class="avatar"><span class="avatar-initial rounded-circle bg-indigo op-5">o</span></div>
-                    <div class="pd-l-10">
-                      <p class="tx-medium mg-b-0">Owen Bongcaras</p>
-                      <small class="tx-12 tx-color-03 mg-b-0">Customer ID#00219</small>
-                    </div>
-                    <div class="mg-l-auto d-flex align-self-center">
-                      <nav class="nav nav-icon-only">
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="mail"></i></a>
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="slash"></i></a>
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="user"></i></a>
-                        <a href="" class="nav-link d-sm-none"><i data-feather="more-vertical"></i></a>
-                      </nav>
-                    </div>
-                  </li>
-                  <li class="list-group-item d-flex pd-x-20">
-                    <div class="avatar"><span class="avatar-initial rounded-circle bg-primary op-5">k</span></div>
-                    <div class="pd-l-10">
-                      <p class="tx-medium mg-b-0">Kirby Avendula</p>
-                      <small class="tx-12 tx-color-03 mg-b-0">Customer ID#00218</small>
-                    </div>
-                    <div class="mg-l-auto d-flex align-self-center">
-                      <nav class="nav nav-icon-only">
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="mail"></i></a>
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="slash"></i></a>
-                        <a href="" class="nav-link d-none d-sm-block"><i data-feather="user"></i></a>
-                        <a href="" class="nav-link d-sm-none"><i data-feather="more-vertical"></i></a>
-                      </nav>
-                    </div>
-                  </li>
-                </ul>
-                <div class="card-footer text-center tx-13">
-                  <a href="" class="link-03">View More Customers <i class="icon ion-md-arrow-down mg-l-5"></i></a>
-                </div><!-- card-footer -->
-              </div><!-- card -->
-            </div>
-            <div class="col-md-6 col-xl-4 mg-t-10">
-              <div class="card ht-lg-100p">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                  <h6 class="mg-b-0">Real-Time Sales</h6>
-                  <ul class="list-inline d-flex mg-b-0">
-                    <li class="list-inline-item d-flex align-items-center">
-                      <span class="d-block wd-10 ht-10 bg-df-2 rounded mg-r-5"></span>
-                      <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Today</span>
-                    </li>
-                    <li class="list-inline-item d-flex align-items-center mg-l-10">
-                      <span class="d-block wd-10 ht-10 bg-df-3 rounded mg-r-5"></span>
-                      <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Yesterday</span>
-                    </li>
-                  </ul>
-                </div><!-- card-header -->
-                <div class="card-body pd-b-0">
-                  <div class="row mg-b-20">
-                    <div class="col">
-                      <h5 class="tx-normal tx-rubik tx-spacing--1 mg-b-10">$150,200 <small class="tx-11 tx-success letter-spacing--2"><i class="icon ion-md-arrow-up"></i> 0.20%</small></h5>
-                      <p class="tx-10 tx-uppercase tx-spacing-1 tx-medium tx-color-03">Total Sales</p>
-                    </div>
-                    <div class="col">
-                      <h5 class="tx-normal tx-rubik tx-spacing--1 mg-b-10">$21,880 <small class="tx-11 tx-danger letter-spacing--2"><i class="icon ion-md-arrow-down"></i> 1.04%</small></h5>
-                      <p class="tx-10 tx-uppercase tx-spacing-1 tx-medium tx-color-03">Avg. Sales Per Day</p>
-                    </div>
-                  </div><!-- row -->
-                  <div class="chart-five">
-                    <div><canvas id="chartBar1"></canvas></div>
-                  </div>
-                </div><!-- card-body -->
-              </div>
-            </div>
           </div><!-- row -->
         </div><!-- container -->
       </div>
@@ -793,8 +612,6 @@
     <script src="./lib/jquery.flot/jquery.flot.stack.js"></script>
     <script src="./lib/jquery.flot/jquery.flot.resize.js"></script>
     <script src="./lib/chart.js/Chart.bundle.min.js"></script>
-    <script src="./lib/jqvmap/jquery.vmap.min.js"></script>
-    <script src="./lib/jqvmap/maps/jquery.vmap.usa.js"></script>
 
     <script src="./assets/js/dashforge.js"></script>
     <script src="./assets/js/dashforge.aside.js"></script>
@@ -809,9 +626,6 @@
         'use strict'
 
         var plot = $.plot('#flotChart', [{
-          data: df3,
-          color: '#69b2f8'
-        },{
           data: df1,
           color: '#d1e6fa'
         },{
@@ -977,25 +791,6 @@
           },
     			xaxis: { show: false }
     		});
-
-        $('#vmap').vectorMap({
-          map: 'usa_en',
-          showTooltip: true,
-          backgroundColor: '#fff',
-          color: '#d1e6fa',
-          colors: {
-            fl: '#69b2f8',
-            ca: '#69b2f8',
-            tx: '#69b2f8',
-            wy: '#69b2f8',
-            ny: '#69b2f8'
-          },
-          selectedColor: '#00cccc',
-          enableZoom: false,
-          borderWidth: 1,
-          borderColor: '#fff',
-          hoverOpacity: .85
-        });
 
 
         var ctxLabel = ['6am', '10am', '1pm', '4pm', '7pm', '10pm'];
